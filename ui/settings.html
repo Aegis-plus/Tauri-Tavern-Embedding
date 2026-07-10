@@ -1,0 +1,45 @@
+<div class="tte-settings inline-drawer">
+    <div class="inline-drawer-toggle inline-drawer-header">
+        <b>Embeddings (TauriTavern)</b>
+        <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+    </div>
+    <div class="inline-drawer-content">
+        <div class="tte-row">
+            <label for="tte-provider">Provider</label>
+            <select id="tte-provider">
+                <option value="openai">OpenAI-compatible</option>
+                <option value="cohere">Cohere</option>
+                <option value="local">Local server (OpenAI-compatible)</option>
+            </select>
+        </div>
+
+        <div class="tte-row">
+            <label for="tte-base-url">Base URL</label>
+            <input id="tte-base-url" type="text" placeholder="https://api.openai.com/v1" />
+        </div>
+
+        <div class="tte-row">
+            <label for="tte-api-key">API Key</label>
+            <input id="tte-api-key" type="password" placeholder="sk-..." />
+        </div>
+
+        <div class="tte-row">
+            <label for="tte-model">Model</label>
+            <input id="tte-model" type="text" placeholder="text-embedding-3-small" />
+        </div>
+
+        <hr />
+
+        <div class="tte-row tte-toggle-row">
+            <label for="tte-chat-toggle">Semantic chat memory</label>
+            <input id="tte-chat-toggle" type="checkbox" />
+        </div>
+        <small class="tte-hint">Embeds messages and injects the most relevant past context before each generation.</small>
+
+        <div class="tte-row tte-toggle-row">
+            <label for="tte-lore-toggle">Semantic Lorebook matching</label>
+            <input id="tte-lore-toggle" type="checkbox" />
+        </div>
+        <small class="tte-hint">Embeds World Info entries and surfaces the most relevant ones by meaning, not just keywords.</small>
+    </div>
+</div>
