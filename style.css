@@ -1,0 +1,199 @@
+/* JanitorAI Importer - TauriTavern Extension Styles */
+
+#janitor-importer-trigger {
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  transition: background-color 0.2s;
+  color: #c2b8a3;
+  font-size: 0.9em;
+}
+#janitor-importer-trigger:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #e0d8c8;
+}
+
+/* ─── Floating Panel ─────────────────────────────────────── */
+
+#janitor-importer-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  max-width: 90vw;
+  max-height: 80vh;
+  background: #1a1a2e;
+  border: 1px solid #3a3a5c;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+#janitor-importer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #16162b;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+#janitor-importer-title {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #c2b8a3;
+}
+
+#janitor-importer-close {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.4em;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+#janitor-importer-close:hover {
+  color: #fff;
+}
+
+#janitor-importer-body {
+  padding: 16px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+#janitor-importer-body label {
+  display: block;
+  font-size: 0.85em;
+  color: #999;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+#janitor-input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#janitor-url-input {
+  flex: 1;
+  padding: 8px 12px;
+  background: #12122a;
+  border: 1px solid #3a3a5c;
+  border-radius: 8px;
+  color: #e0d8c8;
+  font-size: 0.9em;
+  outline: none;
+  transition: border-color 0.2s;
+}
+#janitor-url-input:focus {
+  border-color: #5a9cf5;
+}
+#janitor-url-input::placeholder {
+  color: #555;
+}
+
+#janitor-import-btn,
+#janitor-confirm-import {
+  padding: 8px 16px;
+  background: #3a3a6a;
+  border: 1px solid #5a5a8a;
+  border-radius: 8px;
+  color: #e0d8c8;
+  font-size: 0.85em;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+#janitor-import-btn:hover,
+#janitor-confirm-import:hover {
+  background: #4a4a8a;
+}
+#janitor-import-btn:disabled,
+#janitor-confirm-import:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ─── Status Messages ────────────────────────────────────── */
+
+#janitor-status {
+  font-size: 0.82em;
+  min-height: 1.2em;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+#janitor-status.loading { color: #f0c040; }
+#janitor-status.success { color: #4ade80; }
+#janitor-status.error   { color: #f87171; }
+
+/* ─── Preview Card ───────────────────────────────────────── */
+
+#janitor-preview {
+  margin-top: 12px;
+  padding: 12px;
+  background: #12122a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+}
+
+#janitor-preview-header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+#janitor-preview-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#janitor-preview-info {
+  flex: 1;
+  min-width: 0;
+}
+
+#janitor-preview-info strong {
+  display: block;
+  font-size: 1em;
+  color: #e0d8c8;
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+#janitor-preview-creator {
+  display: block;
+  font-size: 0.8em;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+#janitor-preview-tags {
+  font-size: 0.78em;
+  color: #5a9cf5;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+#janitor-confirm-import {
+  width: 100%;
+  padding: 10px;
+  background: #2a5a3a;
+  border: 1px solid #3a8a5a;
+  color: #4ade80;
+  font-weight: 600;
+}
+#janitor-confirm-import:hover {
+  background: #3a7a4a;
+}
